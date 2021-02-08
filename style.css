@@ -1,0 +1,166 @@
+*,*::after,*::before{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background: #171711;
+  font-family: 'Roboto', sans-serif;
+
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background: #ededee;
+  height: 600px;
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 0px 1px 10px 2px rgba(255, 255, 255, 0.5);
+  position: relative;
+  z-index: 3;
+}
+.top{
+  position: absolute;
+  top: 0px;
+  height: 130px;
+  width: 400px;
+  border-radius: 10px 10px 40px 40px;
+  z-index: 1;
+  background: #fff;
+  box-shadow: 0px 1px 10px 2px rgba(0, 0, 0, 0.114);
+
+}
+.top h1{
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+}
+.form .logo img{
+  height: 85px;
+  width: 85px;
+  position: absolute;
+  top: 0px;
+  transform: translate(-50%,-50%);
+  filter: drop-shadow(1px 4px 2px #d2d2d2);
+  z-index: 2;
+}
+
+.bottom{
+  /* background: #def501; */
+  margin-top: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.card {
+  border: 2px solid #d2d2d2;
+  width: 350px;
+  height: 150px;
+  border-radius: 10px;
+  position: relative;
+}
+.card_title{
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 20px;
+  align-items: center;
+}
+.card_title p{
+  font-size: 18px;
+  padding-left: 10px;
+  font-weight: bold;
+}
+.card_detail{
+  padding: 0 20px;
+
+}
+input{
+  height: 35px;
+  outline: none;
+  border: 1px solid #d2d2d2;
+font-size: 15px;
+font-family: 'Roboto';
+font-weight: 600;
+padding-left: 10px;
+letter-spacing: 1px;
+}
+.card_number input{
+  border-radius: 10px 10px 0px 0px;
+}
+
+.card_detail input{
+  width: 100%;
+
+}
+
+.card_details{
+  display: flex;
+  box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0.114);
+}
+.card_details input:first-child{
+  border-radius: 0px 0px 0px 10px;
+}
+.card_details input:last-child{
+  border-radius: 0px 0px 10px 0px;
+}
+.other_way{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 20px;
+  /* background: #fed401; */
+  margin-top: 15px;
+  width: 350px;
+  border: 2px solid #d2d2d2;
+  border-radius: 10px;
+}
+.other_way i{
+  padding-right: 10px;
+}
+.other_way p{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.donate_btn button{
+  margin-top: 45px;
+  width: 350px;
+  height: 50px;
+  border-radius: 10px;
+  border:none;
+  background: #00aced;
+  font-size: 21px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+}
+.other_way:hover{
+  color: #000001;
+  background: #beedb1;
+  border-color: #31870e;
+  box-shadow: 0px 2px 5px #beedb1;
+}
+.card:hover{
+  color: #000001;
+  background: #f5516f;
+  border-color: #ed0b26;
+  box-shadow: 0px 2px 5px #beedb1;
+}
+button:hover{
+  color: #000;
+}
+i::before{
+  font-size: 20px;
+}
